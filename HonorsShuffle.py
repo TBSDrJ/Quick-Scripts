@@ -3,7 +3,7 @@
 
 from random import shuffle
 
-classList = ["Mohammed", "Evan", "Nick Chen", "Eric", "Drew", "Michelle", "Claire", "Rolan", "Matthew", "Nick Liu", "Ethan", "Michael", "Stanley"]
+classList = ["Mohamed", "Evan", "Nick Chen", "Eric", "Drew", "Michelle", "Claire", "Rolan", "Matthew", "Nick Liu", "Ethan", "Michael", "Stanley"]
 shuffle(classList)
 for index, student in enumerate(classList):
     if index < 12:
