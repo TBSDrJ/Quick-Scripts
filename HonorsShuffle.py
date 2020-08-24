@@ -3,10 +3,28 @@
 
 from random import shuffle
 
-classList = ["Mohamed", "Evan", "Nick Chen", "Eric", "Drew", "Michelle", "Claire", "Rolan", "Matthew", "Nick Liu", "Ethan", "Michael", "Stanley"]
-shuffle(classList)
-for index, student in enumerate(classList):
-    if index < 12:
-        print("Block " + str(index // 3) + ", Meeting " + str(index % 3) + ": " + student)
-    else:
-        print("Block 3, Meeting 3: " + student)
+def shuffleAndPrint(classList):
+    # break list in half, round up
+    breakPoint = len(classList) // 2 + len(classList) % 2
+    # shuffle re-orders the existing list in place
+    shuffle(classList)
+    for index, student in enumerate(classList):
+        # If it is the beginning of a day, add a header
+        if index == 0:
+            print("Today's Class:")
+        elif index == breakPoint:
+            print("Next Class:")
+        # Print the students in order with their meeting slot
+        if index < breakPoint:
+            print("\tBlock " + str(index // 3) + ", Meeting " + str(index % 3) + ": " + student)
+        else:
+            print("\tBlock " + str((index - breakPoint) // 3) + ", Meeting " + str((index -breakPoint) % 3) + ": " + student)
+
+
+per5classList = ["Nicholas", "Eli", "Andrew", "Matthew", "Annie", "Athena",
+    "Nicole", "Dax", "Ashir", "Chiara", "Will", "Justin", "Hewitt",
+    "Daniel", "Shirley"]
+shuffleAndPrint(per5classList)
+per7classList = ["Sasha", "Sydney", "George", "James", "Alex", "Aiden",
+    "William", "Emma", "Eddie", "Isabel", "Hausen", "Emily"]
+shuffleAndPrint(per7classList)
