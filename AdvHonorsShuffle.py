@@ -5,7 +5,10 @@ from random import shuffle
 
 def shuffleAndPrint(classList):
     # break list in half, round up
-    breakPoint = len(classList) // 2 + len(classList) % 2
+    if len(classList) > 10:
+        breakPoint = len(classList) // 2 + len(classList) % 2
+    else:
+        breakPoint = 10
     # shuffle re-orders the existing list in place
     shuffle(classList)
     for index, student in enumerate(classList):
@@ -22,6 +25,8 @@ def shuffleAndPrint(classList):
 
 
 per1classList = ["Nick Chen", "Ethan", "Evan Coats", "Rolan", "Elisabeth",
-    "Drew", "Grace", "Matthew", "Nick Liu", "Audrey", "Eric", "Kyle", "Evan",
+    "Drew", "Grace", "Matthew", "Nick Liu", "Audrey", "Eric", "Kyle", "Evan Ren",
     "Michelle", "Stanley", "Michael", "Claire"]
 shuffleAndPrint(per1classList)
+juniors = ["Ethan", "Rolan", "Matthew", "Nick Liu", "Kyle", "Michelle", "Stanley", "Michael", "Claire", ]
+seniors = ["Nick Chen", "Evan Coats", "Elisabeth", "Drew", "Grace", "Audrey", "Eric", "Evan Ren", ]
