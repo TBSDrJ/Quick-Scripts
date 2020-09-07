@@ -19,3 +19,15 @@ for x, y in zip(xCoords, yCoords):
 
 for index, point in enumerate(points):
     print(f"Point #{index} is {point}")
+
+input("Press <ENTER> to continue")
+
+# scikit-learn 0.23.2
+from sklearn.datasets import load_digits
+digits = load_digits()
+print(digits.DESCR)
+print(digits.images.shape)
+# The -1 argument means 'use whatever works
+# to get it down to only one more dimension'
+digitsX = digits.images.reshape(len(digits.images), -1)
+print(digitsX.shape)
