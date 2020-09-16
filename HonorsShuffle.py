@@ -28,3 +28,7 @@ shuffleAndPrint(per5classList)
 per7classList = ["Sasha", "Sydney", "George", "James", "Alex", "Aiden",
     "William", "Emma", "Eddie", "Isabel", "Hausen", "Emily"]
 shuffleAndPrint(per7classList)
+combinedList = ["Nicholas", "Eli", "Andrew", "Matthew", "Annie", "Athena",
+    "Nicole", "Dax", "Ashir", "Chiara", "Will", "Justin", "Hewitt",
+    "Daniel", "Shirley", "Sydney", "George", "James", "Alex", "Aiden",
+    "William", "Emma", "Eddie", "Isabel", "Hausen", "Emily"]
