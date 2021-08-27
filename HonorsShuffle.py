@@ -21,12 +21,12 @@ def shuffleAndPrint(classList):
             print("\tBlock " + str((index - breakPoint) // 3) + ", Meeting " + str((index -breakPoint) % 3) + ": " + student)
 
 
-per5classList = ["Nicholas", "Eli", "Andrew", "Matthew", "Annie", "Athena",
+per5classList = ["Nicholas", "Eli", "Matthew", "Annie", "Athena",
     "Nicole", "Dax", "Ashir", "Chiara", "Will", "Justin", "Hewitt",
     "Daniel", "Shirley"]
 shuffleAndPrint(per5classList)
 per7classList = ["Sasha", "Sydney", "George", "James", "Alex", "Aiden",
-    "William", "Emma", "Eddie", "Isabel", "Hausen", "Emily"]
+    "William", "Emma", "Eddie", "Isabel", "Hausen", "Emily", "Andrew"]
 shuffleAndPrint(per7classList)
 combinedList = ["Nicholas", "Eli", "Andrew", "Matthew", "Annie", "Athena",
     "Nicole", "Dax", "Ashir", "Chiara", "Will", "Justin", "Hewitt",
