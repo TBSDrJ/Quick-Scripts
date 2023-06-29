@@ -9,3 +9,4 @@ Some quick scripts to automate some simple tasks.
 2. chooseStudent.py: If you have a list of students and you want to select them in a sequence, use this. I use this to decide who's next when we are doing presentations in class.
 3. generatorTest.py: Demonstrate the difference between a generator and an iterator in Python.
 4. massClone.py: I use this when I have a bunch of students' work on Github, I can clone the whole class worth at a time.
+5. parse_dir.py: Find files larger than 10MB in a directory listing that was dumped to a text file.  I would do this way differently now.
