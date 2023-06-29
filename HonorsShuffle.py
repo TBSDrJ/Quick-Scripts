@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/Library/Frameworks/Python.framework/Versions/Current/bin/python3
 # Written in Python 3.7.4, but should be broadly compatible
 
 from random import shuffle
